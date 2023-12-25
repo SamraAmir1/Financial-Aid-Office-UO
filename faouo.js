@@ -18,27 +18,6 @@ accordians.forEach(accordian => {
     })
 })
 
-
-// Sign in
-function signIn() {
-    // Perform authentication logic here
-    // For simplicity, let's assume a successful login for any credentials
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // You should perform actual authentication here (e.g., send credentials to a server)
-    // For now, let's assume a successful login for any credentials
-    const isAuthenticated = true;
-
-    if (isAuthenticated) {
-        // Redirect to the home screen or any desired page
-        window.location.href = 'FAOUO.html';
-    } else {
-        alert('Invalid credentials. Please try again.');
-    }
-}
-
-
 // contact 
 function submitForm(event) {
     event.preventDefault();
@@ -64,3 +43,22 @@ document.addEventListener('DOMContentLoaded', function () {
     // Display the name in the thank you message
     document.getElementById('thankYouName').textContent = name;
 });
+
+//login page
+function validateForm() {
+    var username = document.getElementById('username').value.trim();
+    var password = document.getElementById('password').value.trim();
+
+    if (username === '' || password === '') {
+        alert('Please enter both username and password.');
+        return false;
+    }
+
+    // Assume authentication is successful for demonstration purposes
+    // In a real-world scenario, you would perform authentication on the server
+    // and redirect based on the result    
+    // Redirect to the home page
+    window.location.href = 'FAOUO.html';
+
+    return false; // Prevents the form from submitting (we're manually redirecting)
+}

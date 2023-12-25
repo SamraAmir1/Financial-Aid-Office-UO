@@ -173,6 +173,11 @@ section {
     justify-content: space-between;
 }
 
+.ques {
+    color: black;
+    margin-top: 18px;
+}
+
 .icon {
     margin-right: 16px;
     transition: transform 0.2s;
@@ -187,6 +192,10 @@ section {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s;
+}
+
+.ans {
+    padding: 0 18px;
 }
 
 footer {

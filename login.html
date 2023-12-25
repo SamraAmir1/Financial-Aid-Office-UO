@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Aid Office</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48352e2eb6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,18 +30,16 @@
     <section id="login" style="padding-top: 8px;">
         <p>New here? <a href="#">Create Account</a></p>
 
-        <form id="loginForm">
+        <form id="loginForm" onsubmit="return validateForm()">
             <label for="username" style="font-weight: bold;">Username:</label>
-            
             <input type="text" id="username" name="username" placeholder="Enter your email address" required>
             <br> <br>
 
             <label for="password" style="font-weight: bold;">Password:</label>
-          
             <input type="password" id="password" name="password" placeholder="Enter Password" required>
             <br> <br>
 
-            <button type="button" onclick="signIn()">Sign In</button>
+            <button type="submit">Sign In</button>
         </form>
     </section>
 
