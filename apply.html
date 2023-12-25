@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="FAOUO img.png" alt="image" id="logo">
+            <ul>
+                <li><a href="FAOUO.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="internal_scholarship.html">Internal Scholarships</a></li>
+                <li><a href="external_scholarship.html">External Scholarships</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Scholarship Application Form</h2>
+    <section id="apply">
+        <form id="applicationForm" action="submit_application.php" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full name" required>
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <br><br>
+
+            <label for="cnic">CNIC:</label>
+            <input type="number" id="cnic" name="cnic" placeholder="Enter CNIC" required>
+            <br><br>
+
+            <label for="enrollment">Enrollment Year:</label>
+            <input type="number" id="enrollment" name="enrollment year" placeholder="Enter Enrollment Year" required>
+            <br><br>
+
+            <label for="roll no">Registration Number:</label>
+            <input type="number" id="roll no" name="roll no" placeholder="Enter registration number" required>
+            <br><br>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" placeholder="Enter CGPA" required>
+            <br><br>
+
+            <button type="submit">Submit</button>
+            <br><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>2023 &copy; Financial Aid Office. All Rights Reserved.</p>
+    </footer>
+
+    <script src="faouo.js"></script>
+</body>
+
+</html>
