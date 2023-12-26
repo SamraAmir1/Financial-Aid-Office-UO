@@ -17,7 +17,8 @@ img {
     width: 20%;
 }
 
-.internal_link, .external_link {
+.internal_link,
+.external_link {
     color: black;
 }
 
