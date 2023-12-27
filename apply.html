@@ -29,20 +29,25 @@
     <h2>Scholarship Application Form</h2>
     <section id="apply">
 
-        <form id="applicationForm" action="submit_application.php" method="post" onsubmit="return validateForm()">
+        <form id="applicationForm" onsubmit="return validateForm()">
 
 
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Full name" required>
+            <input type="text" id="name" name="name" placeholder="Full name" required autocomplete="name">
             <br><br>
+
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required
+                autocomplete="email">
             <br><br>
 
+
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <input type="password" id="password" name="password" placeholder="Enter password" required
+                autocomplete="current-password">
             <br><br>
+
 
             <label for="cnic">CNIC:</label>
             <input type="number" id="cnic" name="cnic" placeholder="Enter CNIC" required>
@@ -52,9 +57,10 @@
             <input type="number" id="enrollment" name="enrollment year" placeholder="Enter Enrollment Year" required>
             <br><br>
 
-            <label for="roll no">Registration Number:</label>
-            <input type="number" id="roll no" name="roll no" placeholder="Enter registration number" required>
+            <label for="rollNo">Registration Number:</label>
+            <input type="number" id="rollNo" name="rollNo" placeholder="Enter registration number" required>
             <br><br>
+
 
             <label for="cgpa">CGPA:</label>
             <input type="number" id="cgpa" name="cgpa" placeholder="Enter CGPA" required>
@@ -69,16 +75,8 @@
         <p>2023 &copy; Financial Aid Office. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        function validateForm() {
-            // ... (existing validation code)
-
-            // Redirect to the thanksform.html page after successful form submission
-            window.location.href = 'thxform.html';
-
-            return false; // Prevents the form from submitting (we're manually redirecting)
-        }
-    </script>
+    <script src="apply.js"></script>
+    
 </body>
 
 </html>
